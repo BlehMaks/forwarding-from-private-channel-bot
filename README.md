@@ -27,12 +27,14 @@ It's recommended to use a virtual environment to manage dependencies:
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
 
 ### Step 2: Install Dependencies
 Install the required Python libraries:
 
 ```bash
 pip install aiogram pyrogram cryptography
+```
 
 ### Step 3: Set Up Configuration Files
 The bot uses encrypted JSON files for its configuration.
@@ -58,6 +60,7 @@ After creating your JSON configuration files, encrypt them:
 ```python
 from config import BotConfig, UserConfig, save_bot_config, save_user_config
 
+
 # Encrypt the bot configuration
 bot_config = BotConfig(
     BOT_TOKEN="your_bot_token",
@@ -78,12 +81,14 @@ user_config = UserConfig(
     SOURCE_CHANNEL_IDS=[-1009876543210]
 )
 save_user_config(user_config)
+```
 
 ### Step 5: Run the Bot
 Run the bot using the following command:
 
 ```bash
 python main.py
+```
 
 ## Usage
 
@@ -96,6 +101,7 @@ For testing locally, use ngrok to expose your local server to the internet:
 
 ```bash
 ngrok http 8443
+```
 
 Use the ngrok URL for the `WEBHOOK_URL` in your `bot_config.json` file.
 
