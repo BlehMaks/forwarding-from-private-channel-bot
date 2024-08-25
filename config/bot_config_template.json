@@ -1,0 +1,9 @@
+{
+    "BOT_TOKEN": "your_bot_token",
+    "API_ID": 123456,
+    "API_HASH": "your_api_hash",
+    "WEBHOOK_URL": "https://your-domain.com",
+    "WEBAPP_HOST": "0.0.0.0",
+    "WEBAPP_PORT": 8443,
+    "ALLOWED_USER_IDS": [123456789, 987654321]
+}
